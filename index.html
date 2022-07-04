@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/crown.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&family=MedievalSharp&family=Square+Peg&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">RandomColor</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Random Colors</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Complementary Finder</a></li>
+                <li class="sidebar-nav-item"><a href="#services">More</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center" id="backgroundpage">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 id="complementarywords" class="mb-1" style="font-size:40px; font-variant:small-caps">PRESS ENTER, GET COLOR</h1>
+                <h3 id="quotes" style="font-size:40px;" class="mb-5"><em>RandomColor</em></h3>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="mb-1" style="font-size:40px; font-variant:small-caps" >A Complementary Color in a Second</h2>
+                        <h3 style="font-size:20px;" class="mb-5"><em>
+                            Find opposite, contrasting colors! Select a color!</em></h3>
+                        
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                        <br>
+                        <form id="colorform">
+                            <input id="colorcircle" type="color" value="#eebf20">
+                        </form>
+                            <hr>
+                        <div onclick="Findcomplement(), Showdiv()" class="btn btn-dark btn-xl">Find Complementary Color!</div>
+                        <hr>
+                        <h3 id="originalcolor" style="font-size:20px;" class="mb-5"><em></em></h3>
+                        <h3 id="newcolor" style="font-size:20px; font-family: Arima;" class="mb-5"></h3>
+                        <span class="material-symbols-outlined">
+                            south
+                            </span>
+                        <div style="width:100%; text-align:center;">
+                            <h3 id="hexing" style="font-size:20px; font-family: 'Courier New', Courier, monospace; color:pink; margin:0; padding:0;" class="mb-5"></h3>
+                            <h3 id="rgbing" style="font-size:20px; color:pink;" class="mb-5"></h3>
+                            <input class="color-circle" id="circly" style="display:none;"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Services</h3>
+                    <h2 class="mb-5">What We Offer</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>Responsive</strong></h4>
+                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>Redesigned</strong></h4>
+                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>Favorited</strong></h4>
+                        <p class="text-faded mb-0">
+                            Millions of users
+                            <i class="fas fa-heart"></i>
+                            Start Bootstrap!
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>Question</strong></h4>
+                        <p class="text-faded mb-0">I mustache you a question...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Welcome to
+                    <em>your</em>
+                    next website!
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Recent Projects</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Stationary</div>
+                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Ice Cream</div>
+                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Strawberries</div>
+                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Workspace</div>
+                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/Bordercollie15"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; RandomColor 2022</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            document.body.onkeyup = function(e) {
+            if (e.key == "Enter" ||
+                e.code == "Enter" ||      
+                e.keyCode == 13      
+            ) {
+                //console.log("Enter clicks.")
+                randomquote()
+
+            }
+        }
+            
+            function Findcomplement() {
+                var x = document.getElementById("colorcircle").value;
+                console.log(x);
+                document.getElementById("originalcolor").innerHTML = "Your color was " + x.toUpperCase();
+                
+                
+                var rgbvalue = "("+(hexToRgbcomp(x).r) +","+ (hexToRgbcomp(x).g)+","+(hexToRgbcomp(x).b)+")";
+                var r = 255-hexToRgbcomp(x).r;
+                var g = 255-hexToRgbcomp(x).g;
+                var b = 255-hexToRgbcomp(x).b;
+                var complement = "("+ (255-hexToRgbcomp(x).r) +","+ (255-hexToRgbcomp(x).g)+","+(255-hexToRgbcomp(x).b)+ ")";
+                var hexcomp = rgbToHex(r, g, b);
+                document.getElementById("newcolor").innerHTML = "The complementary color:";
+                document.getElementById("hexing").innerHTML = "Hex = "+hexcomp.toUpperCase();
+                document.getElementById("rgbing").innerHTML = "RGB color = " +complement;
+                document.getElementById("hexing").setAttribute("style", "font-size:20px; font-family: 'Courier New', Courier, monospace; margin:0; padding:0; color:" + hexcomp + ";");
+                document.getElementById("rgbing").setAttribute("style", "font-size:20px; font-family: 'Courier New', Courier, monospace; margin:0; padding:0; color:" + hexcomp + ";");
+                document.getElementById("circly").style.display = "";
+                document.getElementById("circly").style.background = hexcomp;
+                //var arr = ["rgb", "hex"];
+            //function random(mn, mx) {
+                //return Math.random() * (mx - mn) + mn;
+            //}
+            }
+            function hexToRgbcomp(hex) {
+                var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                
+                return result ? {
+                    r: parseInt(result[1], 16),
+                    g: parseInt(result[2], 16),
+                    b: parseInt(result[3], 16)
+                } : null;
+                }
+
+            //alert(hexToRgb("#0033ff").g); // "51";
+            function componentToHex(c) {
+                var hex = c.toString(16);
+                return hex.length == 1 ? "0" + hex : hex;
+                }
+
+            function rgbToHex(r, g, b) {
+                return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+                }
+
+            //alert(rgbToHex(0, 51, 255)); // #0033ff
+            /*function hexToRgb(hex) {
+                var bigint = parseInt(hex, 16);
+                var r = (bigint >> 16) & 255;
+                var g = (bigint >> 8) & 255;
+                var b = bigint & 255;
+
+                return r + "," + g + "," + b;
+            }*/
+            function randomquote() {
+                var down = document.getElementById('quotes');
+                
+                var thecolor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+                down.innerHTML = thecolor.toUpperCase();
+                var rgbvalue = "("+(hexToRgbcomp(thecolor).r) +","+ (hexToRgbcomp(thecolor).g)+","+(hexToRgbcomp(thecolor).b)+")";
+                var r = 255-hexToRgbcomp(thecolor).r;
+                var g = 255-hexToRgbcomp(thecolor).g;
+                var b = 255-hexToRgbcomp(thecolor).b;
+                var complement = (255-hexToRgbcomp(thecolor).r) +","+ (255-hexToRgbcomp(thecolor).g)+","+(255-hexToRgbcomp(thecolor).b);
+                var hexcomp = rgbToHex(r, g, b);
+
+                //console.log(thecolor);
+                //console.log(complement);
+                //console.log(rgbvalue);
+
+                if (r<200 && r>100) {
+                    if (g<200 && g>100) {
+                        if (b<200 && b>100) {
+                            hexcomp = '#000000';
+                            //console.log("blackness");
+                        }
+                    }
+                }
+                
+
+                const colorstyle = "background-color: " + thecolor + ";";
+                document.getElementById("backgroundpage").setAttribute("style", colorstyle);
+                document.getElementById("complementarywords").setAttribute("style", "font-size:40px; font-variant:small-caps; color: "+ hexcomp+";");
+                document.getElementById("quotes").setAttribute("style", "font-size:40px; color: "+ hexcomp+";");
+                document.getElementById("colorcircle").setAttribute("value", thecolor);
+            }
+        </script>
+    </body>
+</html>
